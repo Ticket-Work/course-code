@@ -21,6 +21,6 @@ jobs:
           echo "Inside my group"
           echo "::endgroup::"
       - name: Maskiing a value
-        run: "::add-mask::supersecretvalue"
+        run: echo "::add-mask::supersecretvalue"
       - name: Echoing a masked value
         run: echo "supersecretvalue"
